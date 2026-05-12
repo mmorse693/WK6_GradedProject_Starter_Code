@@ -27,7 +27,7 @@ function App() {
     <BaseLayout isDarkMode={isDarkMode} toggleTheme={toggleTheme}>
       <SideBarLayout>
         <Home />
-        {/* <QuestionDetail id={"q1"} /> */}
+        <QuestionDetail id={"q1"} /> 
         {/* <Login /> */}
         {/* <Register /> */}
       </SideBarLayout>

@@ -1,0 +1,84 @@
+.answer-list-section {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.answer-list-title {
+	margin: 0;
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: var(--text-primary, #1f2937);
+}
+
+.answer-list-grid {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.answer-list-empty-card,
+.answer-card {
+	border: 1px solid rgba(15, 23, 42, 0.08);
+	border-radius: 1rem;
+	box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+.answer-list-empty-text {
+	color: var(--text-secondary, #475569);
+}
+
+.answer-card-even {
+	background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+}
+
+.answer-card-odd {
+	background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%);
+}
+
+.answer-card-body {
+	display: flex;
+	gap: 1rem;
+	align-items: flex-start;
+	padding: 1.25rem;
+}
+
+.answer-card-votes {
+	flex: 0 0 auto;
+	display: flex;
+	justify-content: center;
+}
+
+.answer-card-content {
+	flex: 1;
+	min-width: 0;
+}
+
+.answer-card-text {
+	color: var(--text-primary, #0f172a);
+	line-height: 1.65;
+}
+
+.answer-card-meta {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.75rem 1.25rem;
+	color: var(--text-secondary, #475569);
+}
+
+.answer-card-meta-item {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+@media (max-width: 576px) {
+	.answer-card-body {
+		flex-direction: column;
+	}
+
+	.answer-card-votes {
+		width: 100%;
+		justify-content: flex-start;
+	}
+}
