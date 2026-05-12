@@ -2,7 +2,7 @@ import { Spinner } from 'react-bootstrap';
 import QuestionCard from './QuestionCard.jsx';
 import './QuestionList.css';
 
-const QuestionList = ({ questions, loading }) => {
+const QuestionList = ({ questions, loading, onSelectQuestion }) => {
   if (loading) {
     return (
       <div className="qlist-loading" role="status" aria-live="polite">
@@ -22,6 +22,7 @@ const QuestionList = ({ questions, loading }) => {
         <QuestionCard
           key={question._id || question.id || question.title}
           question={question}
+          onSelectQuestion={onSelectQuestion}
         />
       ))}
     </div>

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Col, Container, Row, Spinner } from 'react-bootstrap';
+import { Button, Col, Container, Row, Spinner } from 'react-bootstrap';
 
 import { questions as mockQuestions } from '../../../data/questions.js';
 import AnswerForm from '../../components/Answer/AnswerForm.jsx';
@@ -7,7 +7,7 @@ import AnswerList from '../../components/Answer/AnswerList.jsx';
 import QuestionContent from '../../components/Question/QuestionContent.jsx';
 import './QuestionDetail.css';
 
-const QuestionDetail = ({ id }) => {
+const QuestionDetail = ({ id, onBack }) => {
   const [question, setQuestion] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -36,6 +36,11 @@ const QuestionDetail = ({ id }) => {
             </div>
           ) : question ? (
             <>
+              <div className="question-detail-actions mb-3">
+                <Button variant="outline-secondary" onClick={onBack}>
+                  Back to Questions
+                </Button>
+              </div>
               <QuestionContent question={question} />
               <AnswerList answers={question.answers || []} />
               <AnswerForm questionId={question._id} />

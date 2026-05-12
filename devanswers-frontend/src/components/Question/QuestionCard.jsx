@@ -3,7 +3,7 @@ import { FaComments, FaUser, FaClock } from 'react-icons/fa';
 import VoteButtons from '../Shared/VoteButtons.jsx';
 import './QuestionCard.css';
 
-const QuestionCard = ({ question }) => {
+const QuestionCard = ({ question, onSelectQuestion }) => {
   if (!question || !question._id) return null;
 
   const voteCount = question.voteCount || question.upvotes || 0;
@@ -13,6 +13,10 @@ const QuestionCard = ({ question }) => {
 
   const handleVote = (voteType) => {
     alert(`${voteType === 'upvote' ? 'Upvoted' : 'Downvoted'}!`);
+  };
+
+  const handleSelect = () => {
+    onSelectQuestion?.(question._id);
   };
 
   return (
@@ -37,7 +41,9 @@ const QuestionCard = ({ question }) => {
           {/* Content Column */}
           <div className="flex-grow-1">
             <Card.Title className="mb-2">
-              <span className="qcard-title-link">{question.title}</span>
+              <button type="button" className="qcard-title-link qcard-title-button" onClick={handleSelect}>
+                {question.title}
+              </button>
             </Card.Title>
             <Card.Text className="qcard-desc mb-2">{question.description}</Card.Text>
             <div className="mb-2">

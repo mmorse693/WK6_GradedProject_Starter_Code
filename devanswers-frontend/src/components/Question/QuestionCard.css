@@ -56,6 +56,13 @@
   transition: color 0.2s;
 }
 
+.qcard-title-button {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  text-align: left;
+}
+
 .qcard-title-link:hover {
   color: var(--primary-hover);
 }
