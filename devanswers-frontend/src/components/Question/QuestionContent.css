@@ -1,0 +1,85 @@
+.qcontent-header-card {
+  border: none !important;
+  border-bottom: 3px solid var(--border-color) !important;
+  border-radius: 12px 12px 0 0 !important;
+  box-shadow: var(--card-shadow);
+  background-color: var(--card-bg);
+}
+
+.qcontent-title {
+  font-weight: 700;
+  color: var(--text-color);
+  font-size: clamp(1.25rem, 5vw, 1.75rem);
+}
+
+.qcontent-meta {
+  font-size: clamp(0.85rem, 2vw, 0.95rem);
+  color: var(--text-muted);
+}
+
+.qcontent-vote-icon-up {
+  color: #5eba7d;
+}
+
+.qcontent-vote-icon-down {
+  color: #dc3545;
+}
+
+.qcontent-body-card {
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  background-color: var(--card-bg);
+}
+
+.qcontent-vote-btn {
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  border: 2px solid var(--border-color);
+  font-size: 1.25rem;
+  font-weight: bold;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+}
+
+.qcontent-vote-btn-up {
+  margin-bottom: 0.5rem;
+}
+
+.qcontent-vote-btn-down {
+  margin-top: 0.5rem;
+}
+
+.qcontent-vote-count {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin: 0.5rem 0;
+}
+
+.qcontent-description {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text-color);
+}
+
+.qcontent-tag-badge {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.qcontent-author-row {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+.qcontent-author-name {
+  color: var(--primary-color);
+}
+
+.qcontent-user-icon {
+  font-size: 0.85rem;
+}

@@ -1,0 +1,101 @@
+.qcard {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: var(--card-shadow);
+  background-color: var(--card-bg);
+}
+
+.qcard:hover {
+  box-shadow: var(--card-hover-shadow);
+  transform: translateY(-1px);
+}
+
+.qcard-stats-col {
+  min-width: 50px;
+}
+
+.qcard-vote-btn {
+  border: none;
+  background: none;
+}
+
+.qcard-vote-up-icon {
+  color: #5eba7d;
+  font-size: 1rem;
+}
+
+.qcard-vote-down-icon {
+  color: #dc3545;
+  font-size: 1rem;
+}
+
+.qcard-comment-icon {
+  color: #667eea;
+  font-size: 0.9rem;
+}
+
+.qcard-vote-count {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.qcard-answer-count {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--text-color);
+}
+
+.qcard-title-link {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.qcard-title-link:hover {
+  color: var(--primary-hover);
+}
+
+.qcard-desc {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  display: -webkit-box;
+  /* -webkit-line-clamp: 2; */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: var(--text-muted);
+}
+
+.qcard-tag-badge {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 0.25rem 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.qcard-meta {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.qcard-author {
+  color: var(--primary-color);
+}
+
+.qcard-user-icon {
+  font-size: 0.7rem;
+}
+
+.qcard-clock-icon {
+  font-size: 0.75rem;
+}
+
+.qcard-date-text {
+  color: var(--text-muted);
+}

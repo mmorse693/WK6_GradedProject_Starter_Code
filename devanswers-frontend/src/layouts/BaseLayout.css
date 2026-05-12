@@ -1,0 +1,8 @@
+.base-wrapper {
+  background-color: var(--bg-primary);
+}
+
+.base-main {
+  margin-top: 60px;
+  background-color: var(--bg-primary);
+}

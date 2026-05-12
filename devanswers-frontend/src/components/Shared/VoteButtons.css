@@ -1,0 +1,63 @@
+.vb-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ── Buttons ─────────────────────────────────────────── */
+.vb-btn-link {
+  border: none !important;
+  background: none !important;
+  padding: 0.2rem !important;
+  line-height: 1;
+}
+
+.vb-btn-outline {
+  border-radius: 8px !important;
+  border: 2px solid var(--border-color) !important;
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+}
+
+.vb-btn-outline-sm {
+  padding: 0.3rem 0.5rem !important;
+}
+
+.vb-btn-outline-lg {
+  padding: 0.5rem 0.75rem !important;
+  font-size: 1.25rem !important;
+  font-weight: bold;
+}
+
+.vb-btn-up {
+  margin-bottom: 0.25rem;
+}
+
+.vb-btn-down {
+  margin-top: 0.25rem;
+}
+
+/* ── Icons ───────────────────────────────────────────── */
+.vb-icon-up {
+  color: #5eba7d;
+}
+
+.vb-icon-down {
+  color: #dc3545;
+}
+
+/* ── Vote count ──────────────────────────────────────── */
+.vb-count {
+  font-weight: 700;
+  color: var(--text-color);
+  margin: 0.15rem 0;
+}
+
+.vb-count-sm {
+  font-size: 1rem;
+}
+
+.vb-count-lg {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
